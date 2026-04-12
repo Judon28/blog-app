@@ -191,7 +191,7 @@ function Home () {
         <>
             <Nav />
             <div>
-                <section className="px-15">
+                <section className="px-5 md:px-10 lg:px-15">
                     <div className="text-center py-13 font-inter  lg:w-[80%] mx-auto">
                         <h1 className="font-semibold text-[36px] lg:text-[75px] leading-[110%]">Exploring the world, one outfit and one dish at a time.</h1>
                         <h3 className="mt-5 text-[18px] lg:text-[22px] text-gray-500">A team obsessed with food and travel. We document the moments; the world tells the stories.</h3>

@@ -199,8 +199,8 @@ function Nav () {
 
             {/*Mobile Navigation*/}
 
-            <nav className="lg:hidden flex font-lato text-[18px] py-5 pl-10 justify-between relative">
-                <div>
+            <nav className="lg:hidden flex items-center font-lato text-[18px] py-5 pl-10 justify-between relative">
+                <div className=" w-27">
                     <Link to="/"> <img src={Logo} alt="Logo"/> </Link>
                 </div>
 
