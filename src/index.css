@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+@theme {
+  --font-lato: "Lato", sans-serif;
+  --font-inter: 'Inter', 'sans-serif';
+}
+
+
+/* Remove the default X (cancel) icon from search inputs */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type="search"] {
+    -moz-appearance: none; /* Firefox */
+}
+
+/* Hide scrollbar globally */
+.scrollbar-hide {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* Internet Explorer / Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Opera */
+}
+
+/*Hide select arrow*/
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/*Slider Styles*/
+
+.slider {
+  @apply flex gap-10 overflow-x-auto snap-x snap-mandatory px-10;
+}
+
+.card {
+  @apply bg-white p-2 shrink-0 snap-center w-[80%] lg:w-[65%] rounded-xl;
+}
+
+/*Tags*/
+.tagButton {
+  @apply capitalize font-semibold bg-white py-2 px-3 rounded-xl h-7 flex items-center hover:bg-black hover:text-white cursor-pointer;
+}
+
+/*Grid Card Styles*/
+.gridCard {
+  @apply bg-white p-2 rounded-xl;
+}
+
+.bgStyle {
+  @apply relative overflow-hidden bg-[url(./assets/grid-img1.png)] h-55 lg:h-85  bg-cover bg-center flex items-end p-7 font-inter font-semibold text-white text-[14px] lg:text-[18px] rounded-xl transform transition-transform duration-500 hover:scale-103 cursor-pointer;
+}
+
+.bgStyle2 {
+  @apply absolute inset-0 bg-black/40;
+}
+
+/*section 4 cards*/
+.postCard {
+  @apply bg-white p-2 rounded-xl ;
+}
+
+.pcImage {
+  @apply h-60 w-full rounded-xl transform transition-transform duration-300 hover:scale-105 cursor-pointer;
+}
+
+.pcTitle {
+  @apply text-center mt-5 text-[18px] font-lato font-semibold capitalize cursor-pointer;
+}
+
+.pcMeta {
+  @apply mt-3 flex justify-center items-center;
+}
+
+.pcDivider {
+  @apply w-10 border border-[#be9656b0] mr-3;
+}
+
+.pcDate {
+  @apply font-inter text-[#be9656b0] italic;
+}
+
+.pcText {
+  @apply mt-3 font-inter text-[16px];
+}
+
+.pcBtn {
+  @apply mt-3 uppercase text-[#be9656b0] hover:text-black cursor-pointer;
+}
+
+/*Side bar*/
+.sideCard {
+  @apply bg-white p-10 rounded-xl mt-10;
+}
+
+.scTitle {
+  @apply font-lato text-[20px] font-semibold;
+}
+
+/*Form*/
+.formContainer {
+  @apply relative mx-auto
+}
+
+.form {
+  @apply flex justify-center;
+}
+
+.emailInput {
+  @apply bg-white h-17 rounded-full w-full  pl-5 py-5 pr-[40%] text-[16px] outline-0;
+}
+
+.submit {
+  @apply uppercase w-30 bg-black text-[16px] text-white rounded-full h-14 absolute right-2 top-1.5 cursor-pointer;
+}
+
+/*Post page*/
+.h2 {
+  @apply font-inter text-[30px] py-5 font-semibold capitalize;
+}
+
+.p {
+  @apply text-[20px] font-inter;
+}
+
+.postGallery {
+  @apply rounded-xl w-full h-full object-center object-cover;
+}
+
+
+/*Post page modified*/
+
+.post-content * {
+  max-width: 100%;
+}
+
+.post-content {
+  @apply w-full text-[20px] font-inter leading-8;
+  max-width: 100%;
+}
+
+
+.post-content p {
+  @apply my-4;
+}
+
+.post-content h1 {
+  @apply font-inter text-[36px] py-5 font-semibold capitalize;
+}
+
+.post-content h2 {
+  @apply font-inter text-[30px] py-5 font-semibold capitalize;
+}
+
+.post-content h3 {
+  @apply font-inter text-[24px] py-4 font-semibold capitalize;
+}
+
+.post-content a {
+  @apply text-blue-500 underline break-all;
+}
+
+/*.post-content ul {
+  @apply list-disc pl-5 my-4;
+}
+
+.post-content ol {
+  @apply list-decimal pl-5 my-4;
+}
+
+.post-content li {
+  @apply my-2;
+}*/
+
+.post-content ul {
+  @apply list-disc pl-5 my-4 text-[17px];
+}
+
+.post-content ol {
+  @apply list-decimal pl-5 my-4 text-[17px];
+}
+
+.post-content li {
+  @apply my-2 break-words;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.post-content li a {
+  @apply break-all;
+}
+
+/* images (match your gallery feel) */
+.post-content img {
+  @apply w-full h-auto rounded-xl my-5 object-cover;
+}
+
+.post-content blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic my-5 text-gray-600;
+}
+
+.post-content pre {
+  @apply bg-gray-900 text-white p-4 rounded-xl my-5 overflow-x-auto;
+}
+
+.post-content code {
+  @apply bg-gray-200 px-1 py-0.5 rounded;
+}
+
+/* iframe (videos) */
+.post-content iframe {
+  @apply w-full h-[400px] rounded-xl my-5;
+}
+
+.post-content strong {
+  @apply font-semibold;
+}
+
+.post-content em {
+  @apply italic;
+}
+
+/* prevent layout breaking */
+.post-content * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.post-content p {
+  @apply text-[17px]
+}
+
+.post-content p,
+.post-content a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+
+/*End of Post page styles*/
+
+
+
+/*Dashboard Styles*/
+
+.input {
+  @apply p-5 border border-gray-500 rounded-xl h-12;
+}
+
+.dbtn1 {
+  @apply border border-black flex items-center justify-center rounded-xl bg-black text-white h-12 w-[90px] cursor-pointer hover:bg-white hover:text-black;
+}
+
+.dbtn2 {
+  @apply border border-black flex items-center justify-center rounded-xl bg-white text-black h-12 w-[105px] cursor-pointer hover:bg-black hover:text-white;
+}
+
+.dbtn3 {
+  @apply border-2 border-black flex items-center justify-center rounded-xl bg-black text-white h-12 cursor-pointer hover:bg-white hover:text-black;
+}
+
+.dblock {
+  @apply mt-5 bg-white rounded-xl font-inter;
+}
+
+.dblock2 {
+  @apply mt-5 bg-black rounded-xl font-inter text-white;
+}
+
+.dblockupper {
+  @apply flex justify-between px-10 py-5 border-b border-gray-400;
+}
+
+
+.tborder {
+  @apply border-b border-gray-400 px-3 py-3;
+}
+
+
+.status1 {
+  @apply w-25 h-10 bg-green-500 text-white rounded-3xl;
+}
+
+.status2 {
+  @apply w-25 h-10  text-white rounded-3xl capitalize;
+}
+
+.navBtn {
+  @apply w-10 h-10 border border-gray-400 rounded-lg;
+}
+
+.cpBox {
+  @apply bg-white p-5 font-inter rounded-xl shadow-[0_0_2px_gray] mt-10;
+}
+
+.navLink {
+  @apply w-full h-9 flex items-center px-10 my-10  transition-all text-[20px];
+}
+
+/*Drop down menu styles*/
+.ddContainer {
+  @apply flex flex-col gap-y-3 mt-2;
+}
+
+.ddLabel {
+  @apply text-gray-400 font-inter text-[13px];
+}
+
+.ddSelect {
+  @apply p-5 border border-gray-300 rounded-xl h-10 focus:outline-0
+}
+
+
+/*Quill text editor*/
+.ql-editor {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-height: 300px;      
+  overflow-y: auto;
+}
+

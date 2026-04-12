@@ -1,0 +1,3 @@
+match /{allPaths=**} {
+      allow read, write: if request.time < timestamp.date(2026, 4, 25);
+    }

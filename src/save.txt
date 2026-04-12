@@ -1,0 +1,52 @@
+{/*Slide2
+
+                        <div className="card">
+                            <div className="relative bg-[url(./assets/img1.png)]  bg-cover bg-center h-110 lg:h-120 mx-auto flex items-end px-5 lg:px-20 py-10 rounded-xl overflow-hidden">
+
+                                <div class="absolute inset-0 bg-black/50"></div>
+                                <div className="z-10">
+                                    <div className="lg:w-[25%] flex gap-5">
+                                        <button className="font-semibold bg-white p-2 rounded-lg h-7 flex items-center">Food</button>
+                                        <button className="font-semibold bg-white p-2 rounded-lg h-7 flex items-center">Discover</button>
+                                    </div>  
+
+                                    <div className="mt-5">
+                                        <h1 className="font-inter font-semibold text-[21px] md:text-[42px]  text-white">Learn how easy it is to make dumplings at home</h1>    
+                                    </div> 
+
+                                    <div className="flex gap-3 items-center text-white  mt-3">
+                                        <p className="hidden md:block capitalize">By storied themes</p>
+                                        <div className="hidden md:block h-1 w-1 border-4 rounded-full"></div>
+                                        <div className="capitalize">sept 28, 2025</div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+                        <div className="card">
+                            <div className="relative bg-[url(./assets/img1.png)]  bg-cover bg-center h-110 lg:h-120 mx-auto flex items-end px-5 lg:px-20 py-10 rounded-xl overflow-hidden">
+
+                                <div class="absolute inset-0 bg-black/50"></div>
+                                <div className="z-10">
+                                    <div className="lg:w-[25%] flex gap-5">
+                                        <button className="font-semibold bg-white p-2 rounded-lg h-7 flex items-center">Food</button>
+                                        <button className="font-semibold bg-white p-2 rounded-lg h-7 flex items-center">Discover</button>
+                                    </div>  
+
+                                    <div className="mt-5">
+                                        <h1 className="font-inter font-semibold text-[21px] md:text-[42px]  text-white">Learn how easy it is to make dumplings at home</h1>    
+                                    </div> 
+
+                                    <div className="flex gap-3 items-center text-white  mt-3">
+                                        <p className="hidden md:block capitalize">By storied themes</p>
+                                        <div className="hidden md:block h-1 w-1 border-4 rounded-full"></div>
+                                        <div className="capitalize">sept 28, 2025</div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        */}
