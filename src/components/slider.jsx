@@ -15,6 +15,21 @@ export default function Slider (props) {
         )
     }) : null;
 
+    //for mobile
+    const mobileTags = props.data.tags ? props.data.tags.map((tag, index) => {
+        return (
+            <button
+                key={index}
+                className="font-semibold bg-white p-2 rounded-lg h-7 inline-flex whitespace-nowrap items-center"
+            >
+                {tag}
+            </button>
+        )
+    }) : null;
+
+    const tag = mobileTags.slice(0,2)
+
+
 
     const image = props.data.img || defaultImg(props.data.category)
     
@@ -27,11 +42,16 @@ export default function Slider (props) {
                 >
 
                 <div className="absolute inset-0 bg-black/50"></div>
-                <div className="z-10">
-                    <div className="lg:w-[25%] flex gap-5">
+                <div className="z-10 w-full">
+                    <div className="hidden lg:flex gap-5 lg:w-[25%] ">
                         {tags}
                         
                     </div>  
+
+                    <div className=" lg:hidden flex flex-wrap gap-5">
+                        {tag}
+                        
+                    </div> 
 
                     <div className="mt-5">
                         <h1 className="font-inter font-semibold text-[21px] md:text-[42px]  text-white">{props.data.shortTitle}</h1>    

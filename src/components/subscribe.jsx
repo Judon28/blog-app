@@ -51,7 +51,7 @@ export default function Subscribe() {
   return (
     <>
       <form action={handleSubscribe} className="form">   
-            <input type="email" name="email" placeholder="Your email address" className="emailInput" required/>
+            <input type="email" name="email" placeholder="Your email" className="emailInput" required/>
             <input type="submit" value={loading ? "..." : "Subscribe"} className="submit"/>
             
       </form>

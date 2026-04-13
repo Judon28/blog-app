@@ -198,7 +198,7 @@ function Home () {
                     </div>
                     
                     <div className="relative text-center md:w-[50%] lg:w-[30%] mx-auto">
-                        <Subscribe/>
+                        <Subscribe />
                         {/*<form className="flex justify-center">
                             <input type="email" name="email" placeholder="Your email address" className="bg-white h-17 rounded-full w-full pl-5 py-5 pr-[40%] text-[16px] outline-0" required/>
                             <input type="submit" value="subscribe" className="uppercase w-30 bg-black text-[16px] text-white rounded-full h-14 absolute right-2 top-1.5 cursor-pointer"/>

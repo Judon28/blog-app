@@ -69,7 +69,7 @@ function Contact () {
                     
                 </div>
 
-                <div className="lg:flex p-10 gap-10">
+                <div className="lg:flex gap-10 p-5 lg:p-10">
                     <div className="lg:w-[65%]">
                         <form action={handleSubscribe} className="font-inter text-[18px] ">
                             <div className="flex flex-col">
